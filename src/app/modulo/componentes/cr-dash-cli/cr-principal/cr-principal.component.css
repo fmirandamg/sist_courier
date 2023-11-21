@@ -1,0 +1,32 @@
+
+.centrado{
+    text-align: center;
+}
+
+.fondoEt{
+    /*
+    background: rgba(255, 255, 255, 0.15);
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(179,213,249,1) 0%, rgba(231,249,252,1) 100%);
+    */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(206,215,224,1) 0%, rgba(249,252,252,1) 100%);
+
+    padding: 1rem 2rem;
+    border-radius: 1.0rem;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    color: black;
+    margin-top: 1rem;
+
+}
+
+p{
+    font-size: 30px;
+} 
+
+.margen{
+    padding-right: 10%;
+    padding-left: 10%;
+}

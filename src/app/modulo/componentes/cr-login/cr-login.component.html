@@ -1,0 +1,39 @@
+<div style="padding-top: 10%;">
+    <div class="custom-form" >
+      <div class="flex align-items-center justify-content-center">
+          <div class="p-fluid" style="width: 90%;">
+             <div class="field" style="text-align:center">
+                <img src="assets/img_sistema/logo_empresa.png" style="width=100%">
+             </div>  
+              <div class="field">
+                  <label for="correo"> Correo</label>
+                  <input pInputText id="correo" type="text" placeholder="Dirección de correo" 
+                  class="p-inputtext-lg w-full p-2 mb-1 ">
+              </div>
+              <div class="field"> 
+                  <label for="clave" >Clave</label>
+                  <p-password id="clave" 
+                    placeholder="Clave de usuario" 
+                    [toggleMask]="true" 
+                    [feedback]="false"
+                    styleClass="mb-5" 
+                    inputStyleClass="p-inputtext-lg w-full p-2 md:w-30rem"></p-password>
+
+                  <a routerLink="/recpass"style="float:left;font-size:15px;  padding-bottom: 3%;">
+                      Olvido su Password?</a>
+              </div> 
+               <div class="field"> 
+                   <p-button (click)="ingreso()" label="Ingrese"></p-button>
+               </div>
+             
+
+              <div style="text-align: center; padding-top: 2%; font-size:15px" >
+                  No tiene una cuenta? 
+                  <a routerLink="/registro">Registrese</a>
+              </div>
+  
+          </div>
+      </div>
+   </div>
+  </div>
+  

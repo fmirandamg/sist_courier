@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+  html,
+
+body {
+    background: #ecf0f3;
+    font-family: var(--font-family);
+  }
+
+label{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.field{
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    /*top right bottom left*/
+}
+
+.custom-form {
+    min-width: 600px;
+    max-width: 45%;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1rem 1rem;
+    /*margin: auto;*/
+    border-radius: 1.0rem;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    color: black;
+    margin-top: 1rem;
+  }
+
+  :host ::ng-deep .pInputText{
+    font-size:1px; 
+  }
+

@@ -1,0 +1,109 @@
+<div class="grid margen">
+    <div class="col-12">
+		<div class="card fondoEt">
+			<div class="p-fluid p-formgrid grid">
+				<div class="field col-12 md:col-12" style="text-align:center">
+				   <br>
+					<h1>Actualice sus datos</h1>
+				</div>
+
+				<!--**********-->
+				<div class="field col-12 md:col-4">
+					<label for="tip_id">Tipo</label>
+					<p-dropdown [options]="tip_id" id="tip_id" optionLabel="name" 
+					(onChange)="cambioTipo($event)"></p-dropdown>
+				</div>
+				<div class="field col-12 md:col-4">
+					<label for="Id">Identificacion</label>
+					<input pInputText id="Id" type="text" 
+					class="p-inputtext-lg w-full p-2 mb-1 "/>
+				</div>
+				<div class="field col-12 md:col-4">
+					<label for="fec_nacimiento">Fecha de Nacimiento</label>
+					<p-calendar [showIcon]="true" id="fec_nacimiento" inputId="icon"
+					class="p-inputtext w-full p-2 mb-1 "></p-calendar>
+				</div>
+				
+				<!--**********-->
+                <div *ngIf="tipo_persona == 'P'" class="field col-12 md:col-6">
+					<label for="nombres">Nombres</label>
+					<input pInputText id="nombres" type="text" 
+					class="p-inputtext-lg w-full p-2 mb-1 "/>
+				</div>
+				<div *ngIf="tipo_persona == 'P'" class="field col-12 md:col-6">
+					<label for="apellidos">Apellidos</label>
+					<input pInputText id="apellidos" type="text" 
+					class="p-inputtext-lg w-full p-2 mb-1 "/>
+				</div>
+				<div *ngIf="tipo_persona == 'E'" class="field col-12 md:col-12">
+					<label for="compania">Compañia</label>
+					<input pInputText id="compania" type="text" 
+					class="p-inputtext-lg w-full p-2 mb-1 "/>
+				</div>
+				<!--**********-->
+				<div class="field col-12 md:col-6">
+					<label for="email">Email</label>
+					<input pInputText id="email" type="text" 
+					class="p-inputtext-lg w-full p-2 mb-1 "/>
+				</div>
+                <div class="field col-12 md:col-6">
+					<label for="password">Contraseña</label>
+                    <p-password id="password" 
+					type="password"  
+					[toggleMask]="true" 
+                    [feedback]="true"
+					></p-password>
+				</div>
+                <div class="field col-12 md:col-6">
+					<label for="emailconf">Confirmar Email</label>
+					<input pInputText id="emailconf" type="text" 
+					class="p-inputtext-lg w-full p-2 mb-1 "/>
+				</div>
+                <div class="field col-12 md:col-6">
+					<label for="passwordconf">Confirmar Contraseña</label>
+                    <p-password id="passwordconf" type="password"  
+					[toggleMask]="true" 
+                    [feedback]="true"
+					></p-password>
+				</div>
+                <!--**********-->
+				<div class="field col-12 md:col-4">
+					<label for="pais">Pais</label>
+					<p-dropdown [options]="pais" id="pais" optionLabel="name" ></p-dropdown>
+					<!--
+					<p-dropdown [options]="cities" [(ngModel)]="selectedDrop" placeholder="Select a City" [showClear]="true"></p-dropdown>
+					-->
+				</div>
+				<div class="field col-12 md:col-4">
+					<label for="provincia">Provincia</label>
+					<p-dropdown [options]="provincia" id="provincia" optionLabel="name" ></p-dropdown>
+				</div>
+				<div class="field col-12 md:col-4">
+					<label for="canton">Provincia</label>
+					<p-dropdown [options]="canton" id="canton" optionLabel="name" ></p-dropdown>
+				</div>
+				
+				<div class="field col-12 md:col-12">
+					<label for="direccion">Dirección de domicilio de la persona que registra</label>
+					<textarea rows="5" cols="30" id="direccion" pInputTextarea [autoResize]="true"></textarea>
+				</div>
+				<!--**********-->
+				<div class="field col-12 md:col-4">
+					<label for="movil">Móvil / Whatsapp*</label>
+					<input pInputText id="movil" type="text" 
+					class="p-inputtext-lg w-full p-2 mb-1 "/>
+				</div>
+				<div class="field col-12 md:col-4">
+					<label for="fijo">Telefono fijo de contacto</label>
+					<input pInputText id="fijo" type="text" 
+					class="p-inputtext-lg w-full p-2 mb-1 "/>
+				</div>
+				<div class="field col-12 md:col-4">
+					<label >&nbsp;</label>
+					<p-button label="Actualizar"></p-button>
+				</div>
+                
+			</div>
+		</div>
+	</div>
+</div>
